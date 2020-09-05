@@ -11,6 +11,7 @@ Blockly.Python['servo'] = function(block) {
 Blockly.Python['mpu6050_init'] = function(block) {
   Blockly.Python.definitions_['from_machine_import_pin'] = 'from machine import Pin';
   Blockly.Python.definitions_['from_machine_import_i2c'] = 'from machine import I2C';
+  Blockly.Python.definitions_['from_mpu6050_import_mpu6050'] = 'from MPU6050 import MPU6050';
 
   var dropdown_addr = block.getFieldValue('addr');
   var code = `mpu = MPU6050(I2C(0, scl=Pin(22), sda=Pin(21), freq=100000), ${dropdown_addr})\n`;
