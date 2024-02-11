@@ -12,5 +12,9 @@
         "mpu6050_get_acc",
         "mpu6050_get_gyro",
         "mpu6050_get_temp"
+    ],
+    supportArduinoPlatform: true,
+    depends: [ // Arduino library
+        "MPU6050@1.3.0"
     ]
 });
