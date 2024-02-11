@@ -38,7 +38,7 @@ Blockly.JavaScript['mpu6050_init'] = function(block) {
   Blockly.JavaScript.definitions_['define']['mpu'] = `MPU6050 mpu(${dropdown_addr}, &Wire);`;
   
   var code = `Wire.begin();
-accelgyro.initialize();
+mpu.initialize();
 `;
   return code;
 };
